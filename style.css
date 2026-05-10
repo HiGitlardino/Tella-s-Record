@@ -52,6 +52,7 @@ body {
 .header__button {
     background-color: blueviolet;
     color: white;
+    border-radius: 20% solid blueviolet;
     border: none;
     outline: none;
     padding: 10px 30px;
@@ -398,6 +399,9 @@ body {
         flex-direction: column;
         gap: 20px;
     }
+    .header__menu {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width:520px) {
@@ -406,9 +410,7 @@ body {
         width: 10%;
     }
 
-    .header__menu {
-        flex-direction: column;
-    }
+
 
     .texts__subtitle {
         font-size: 15px;
@@ -438,8 +440,9 @@ body {
         flex-direction: column;
         margin-top: 20px;
     }
+  
 
-
+   
 }
 
 @media screen and (max-width:400px) {
