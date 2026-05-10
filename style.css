@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .header {
@@ -14,8 +19,8 @@
     width: 100%;
     position: fixed;
     z-index: 100;
-
-
+    background-color: #8E5BEC;
+    top: 0;
 }
 
 .header__menu {
@@ -53,10 +58,12 @@
     padding: 10px 30px;
 }
 
-.header__buttons {}
+
 
 .hero {
     background-color: #8E5BEC;
+    position: relative;
+    padding-top: 250px;
 }
 
 .hero__background-imgs {
@@ -71,7 +78,7 @@
 
 .texts {
     display: flex;
-    position: absolute;
+    background-color: #8E5BEC;
     flex-direction: column;
     top: 0;
     right: 0;
@@ -79,7 +86,8 @@
     justify-content: center;
     color: white;
     width: 100vw;
-    margin-top: 250px;
+
+    gap: 10px;
 }
 
 .texts__title {
@@ -95,11 +103,13 @@
 }
 
 .texts__button {
-    width: 50%;
-    margin-left: 310px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 20px;
     background-color: black;
     color: white;
-
+    padding: 10px 15px;
+    border: none;
 }
 
 .texts__end {
@@ -108,7 +118,9 @@
 }
 
 .texts__image {
-    margin-right: 100px;
+
+    width: 85%;
+    margin-right: 15%;
 }
 
 .container2 {
@@ -139,6 +151,7 @@
     border-radius: 20px;
     padding: 30px;
     width: 50%;
+    gap: 15px;
 }
 
 .card-with-image {
@@ -173,4 +186,293 @@
     margin-top: 20px;
     font-size: 14px;
     color: darkgray;
+}
+
+.container3 {
+    background-color: rgba(249, 249, 250, 1);
+}
+
+.container3__texts {
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 36px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.container3__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 80px;
+}
+
+.container3__horizontal {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+}
+
+.container3__card {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 50%;
+    text-align: center;
+    font-size: 26px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.container3__image2 {
+    width: 100%;
+    border-radius: 10px
+}
+
+.container3__subhoriznontal {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.container3__subhoriznontal {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.container3__card2 {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container3__title {
+    font-family: "Michroma", sans-serif;
+}
+
+.texts__title {
+    font-family: "Michroma", sans-serif;
+}
+
+.footer {
+    display: flex;
+    margin-top: 70px;
+    background-color: #432876;
+    color: white;
+    flex-direction: column;
+    gap: 30px;
+    padding: 70px 80px;
+}
+
+.footer_head {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.footer__texts {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font-size: 15px;
+    align-items: start;
+    gap: 300px;
+}
+
+.footer__down {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.down__texts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.texts__link {
+    text-decoration: none;
+    color: white;
+
+}
+
+.header__buttons {
+    display: flex;
+}
+
+.texts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+
+@media screen and (max-width:1341px) {
+    .footer__texts {
+        flex-direction: row;
+        gap: 80px;
+    }
+
+    .down__texts {
+        flex-direction: column;
+    }
+
+    .header__menu {
+        width: 80%;
+        gap: 50px;
+    }
+
+    .header {
+        padding: 30px 30px;
+    }
+}
+
+@media screen and (max-width:986px) {
+    .header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero {
+        height: calc(100vh + 30vw);
+
+    }
+
+    .text__title {
+        font-size: 20px;
+    }
+
+    .header__buttons {}
+}
+
+@media screen and (max-width:800px) {
+    .container3__texts {
+        font-size: 30px;
+    }
+
+    .texts__title {
+        font-size: 50px;
+    }
+
+    .container3__title {
+        font-size: 20px;
+    }
+
+    .cards_line {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .container3__horizontal {
+        flex-direction: column;
+
+    }
+
+    .container3__card {
+        width: 100%;
+    }
+
+    .footer__texts {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:520px) {
+
+    .container3__image-error {
+        width: 10%;
+    }
+
+    .header__menu {
+        flex-direction: column;
+    }
+
+    .texts__subtitle {
+        font-size: 15px;
+    }
+
+    .texts__title {
+        font-size: 20px;
+    }
+
+    .texts__subtitle {
+        font-size: 10px;
+    }
+
+    .texts__end {
+        font-size: 15px;
+    }
+
+    .container3__cards {
+        padding: 0;
+    }
+
+    .container__cards {
+        padding: 0;
+    }
+
+    .footer__links {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .header__links{
+
+    }
+
+   
+}
+
+@media screen and (max-width:400px) {
+    .texts__button {
+
+        justify-content: start;
+        font-size: 10px;
+        margin-left: 0px;
+    }
+
+    .card {
+        font-size: 10PX;
+    }
+
+    .texts__title {
+        font-size: 10px;
+    }
+
+    .texts__end {
+        font-size: 10px;
+    }
+
+    .texts__title {
+        font-size: 20px;
+    }
+
+    .texts__subtitle {
+        font-size: 20px;
+        padding: 10px;
+    }
+
 }
